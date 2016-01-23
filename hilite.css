@@ -1,0 +1,326 @@
+/***** Global *****/
+
+body {
+    background: brown url("images/wood.jpg");
+	position:relative;
+	margin:0;
+	padding:0;
+}
+
+h1, h2, h3 {
+	font-family: Georgia, serif;
+}
+
+p {
+	font-family: Helvetica, sans-serif;
+}
+
+#page {
+	width:1200px;
+	height:1200px;
+	position:relative;
+	top:50px;
+	background:white;
+	margin:auto;
+}
+
+/***** Aside *****/
+
+
+aside {
+	float: right;
+	width:450px;
+	height:1200px;
+	background:grey;
+}
+
+aside img {
+	width:448px;
+	position: relative;
+	left:1px;
+}
+
+aside h1, aside h2 {
+	text-align: center;
+	font-family: Georgia, serif;
+}
+
+aside h2 {
+	color:blue;
+}
+
+aside p {
+	margin: 0 30px;
+	line-height: 1.5em;
+	font-family: Helvetica, sans-serif;
+}
+
+aside ul {
+	padding: 0 50px;
+	line-height: 1.4em;
+	font-family: Helvetica, sans-serif;
+}
+
+aside div {
+	margin-left: 20px;
+	float:left;
+	width: 35px;
+	height: 35px;
+	background: black;
+	border-radius: 100%
+}
+
+aside div h3 {
+	margin:0;
+	padding:0;
+	color: white;
+	line-height: 2em;
+	text-align: center;
+	border-radius: 100%;
+	font-family: Helvetica, sans-serif;
+}
+
+div#buy-now {
+	width: 100px;
+	border-radius: 0;
+	float: right;
+	background: blue;
+	margin-right: 30px;
+	border-radius: 5px;
+}
+
+aside a {
+	text-decoration: none;
+	color: white;
+}
+/***** Header *****/
+
+header {
+	border-bottom: 1px solid black;
+}
+
+header ul, header li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+header ul {
+	margin-left: 50px;
+}
+
+header li {
+	display:inline-block;
+	margin:10px;
+	color:grey;
+}
+
+/***** Navigation *****/
+
+nav {
+	background: rgb(31, 98, 224);
+	height: 40px;
+}
+
+nav ul {
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+
+ul.topmenu {
+	margin: 0 40px;
+}
+
+ul.topmenu > li {
+	float: left;
+}
+
+ul.topmenu::after {
+	content:'';
+	display: block;
+	clear:both;
+}
+
+nav ul li a {
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+	width: 125px;
+	color: white;
+}
+
+nav ul li:hover {
+	background: rgba(31, 98, 224, .8);
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+nav ul li a:hover {
+	background: rgba(31, 98, 224, 1);
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	background: rgba(31, 98, 224, .9);
+	z-index: 2;
+}
+
+/***** Main *****/
+
+/* Main Text*/
+
+main ul {
+	position: relative;
+	top: 50px;
+	margin-left: 50px;
+	padding: 0;
+}
+
+main li {
+	list-style: none;
+	display: inline-block;
+	padding: 5px;
+	font-family: Helvetica, sans-serif;
+}
+
+main li a {
+	text-decoration: none;
+	color: blue;
+}
+
+main li a.current {
+	cursor: default;
+	color:grey;
+}
+
+main h1 {
+	position: relative;
+	top: 50px;
+	margin-left:50px;
+	font-family: Georgia, serif;
+}
+
+main p {
+	margin-left: 50px;
+	margin-right: 500px;
+	font-family: Helvetica, sans-serif;
+	position: relative;
+	top: 50px;
+	line-height: 1.5em;
+	color: grey;
+}
+
+main p.sort {
+	font-size: .8em;
+	margin-left: 50px;
+}
+
+main p.sort span {
+	font-weight: bold;
+	color: black;
+}
+
+/* Main Gallery*/
+
+#gallery {
+	width:670px;
+	height:720px;
+	background: clear;
+	position: relative;
+	top: 70px;
+	margin-left: 50px;
+}
+
+
+#gallery img {
+	width: 210px;
+	height: 250px;
+}
+
+#gallery h2 {
+	font-size: 1.2em;
+}
+
+#gallery p {
+	margin: 0;
+	padding: 0;
+	color: blue;
+	top:0;
+	font-weight: bold;
+}
+
+#gallery span.discount {
+	text-decoration: line-through;
+	color:grey;
+}
+
+div.onsale {
+	width: 60px;
+	height: 30px;
+	background: blue;
+	position: absolute;
+	top: 10px;
+}
+
+#gallery div.onsale p {
+	color: white;
+	line-height: 2em;
+	font-size: .9em;
+	padding: 0 2px;
+}
+
+#shirt1 {
+	width: 210px;
+	height: 350px;
+	background: clear;
+	float: left;
+}
+
+#shirt2 {
+	width: 210px;
+	height: 350px;
+	background: clear;
+	margin-left: 20px;
+	float:left;
+}
+
+#shirt3 {
+	width: 210px;
+	height: 350px;
+	background: clear;
+	margin-left: 20px;
+	float:left;
+}
+
+#shirt4 {
+	width: 210px;
+	height: 350px;
+	background: clear;
+	float: left;
+	position: relative;
+	top:20px;
+}
+
+#shirt5 {
+	width: 210px;
+	height: 350px;
+	background: clear;
+	margin-left: 20px;
+	float:left;
+	position: relative;
+	top: 20px;
+}
+
+#shirt6 {
+	width: 210px;
+	height: 350px;
+	background: clear;
+	margin-left: 20px;
+	float:left;
+	position: relative;
+	top: 20px;
+}
