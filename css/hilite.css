@@ -1,7 +1,7 @@
 /***** Global *****/
 
 body {
-    background: brown url("images/wood.jpg");
+    background: brown url("../images/wood.jpg");
 	position:relative;
 	margin:0;
 	padding:0;
@@ -11,7 +11,7 @@ h1, h2, h3 {
 	font-family: Georgia, serif;
 }
 
-p {
+p, ul {
 	font-family: Helvetica, sans-serif;
 }
 
@@ -42,7 +42,6 @@ aside img {
 
 aside h1, aside h2 {
 	text-align: center;
-	font-family: Georgia, serif;
 }
 
 aside h2 {
@@ -52,13 +51,21 @@ aside h2 {
 aside p {
 	margin: 0 30px;
 	line-height: 1.5em;
-	font-family: Helvetica, sans-serif;
 }
 
 aside ul {
-	padding: 0 50px;
+	padding: 0 32px;
 	line-height: 1.4em;
-	font-family: Helvetica, sans-serif;
+}
+
+aside li {
+	list-style: none;
+}
+
+aside li::before {
+	content: "\2014";
+	padding-right: 8px;
+
 }
 
 aside div {
@@ -68,6 +75,26 @@ aside div {
 	height: 35px;
 	background: black;
 	border-radius: 100%
+}
+
+div#outline {
+	background: blue;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	top: -3px;
+}
+
+div#outline div {
+	margin-left: 0;
+	position: relative;
+	left: 2.5px;
+	top: 3px;
+	background: white;
+}
+
+div#outline div h3 {
+	color:blue;
 }
 
 aside div h3 {
@@ -92,11 +119,17 @@ div#buy-now {
 aside a {
 	text-decoration: none;
 	color: white;
+	padding: 5px 8px;
 }
 /***** Header *****/
 
 header {
 	border-bottom: 1px solid black;
+}
+
+header a {
+	text-decoration: none;
+	color:grey;
 }
 
 header ul, header li {
@@ -150,9 +183,11 @@ nav ul li a {
 	color: white;
 }
 
+
 nav ul li:hover {
 	background: rgba(31, 98, 224, .8);
 }
+
 
 nav ul li:hover > ul {
 	display: block;
@@ -169,6 +204,7 @@ nav ul ul {
 	z-index: 2;
 }
 
+
 /***** Main *****/
 
 /* Main Text*/
@@ -184,7 +220,6 @@ main li {
 	list-style: none;
 	display: inline-block;
 	padding: 5px;
-	font-family: Helvetica, sans-serif;
 }
 
 main li a {
@@ -201,13 +236,11 @@ main h1 {
 	position: relative;
 	top: 50px;
 	margin-left:50px;
-	font-family: Georgia, serif;
 }
 
 main p {
 	margin-left: 50px;
 	margin-right: 500px;
-	font-family: Helvetica, sans-serif;
 	position: relative;
 	top: 50px;
 	line-height: 1.5em;
